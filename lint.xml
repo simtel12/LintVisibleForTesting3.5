@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--use 'lint - -list' to show all possible ids-->
+
+<lint>
+
+    <!-- Warnings/Errors ids which were upgraded to error since we do not longer have
+    them and we want to keep it that way :) -->
+    <issue id="VisibleForTests" severity="error"/>
+
+</lint>

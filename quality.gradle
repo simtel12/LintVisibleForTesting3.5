@@ -1,0 +1,21 @@
+
+def defaultAndroidConfig = {
+    android {
+        lintOptions {
+            abortOnError true
+            quiet false
+            htmlReport true
+            lintConfig file(rootProject.file('lint.xml'))
+            baseline file("lint-baseline.xml")
+        }
+    }
+}
+
+plugins.withId('com.android.application') {
+    defaultAndroidConfig()
+}
+
+plugins.withId('com.android.library') {
+    defaultAndroidConfig()
+}
+
